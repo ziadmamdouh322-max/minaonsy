@@ -771,30 +771,30 @@
             const cityText = document.getElementById(`opt-${city}`).textContent;
 
             let msg = `${i18n[currentLang].wsTitle}\n\n`;
-            msg += `📅 ${i18n[currentLang].wsDate}: ${date}\n`;
-            msg += `🤵 ${i18n[currentLang].wsGroom}: ${groom}\n`;
-            msg += `👰 ${i18n[currentLang].wsBride}: ${bride}\n`;
-            msg += `📞 ${i18n[currentLang].wsPhone}: ${phone}\n`;
+            msg += ` ${i18n[currentLang].wsDate}: ${date}\n`;
+            msg += ` ${i18n[currentLang].wsGroom}: ${groom}\n`;
+            msg += ` ${i18n[currentLang].wsBride}: ${bride}\n`;
+            msg += ` ${i18n[currentLang].wsPhone}: ${phone}\n`;
             if(extraPhone !== i18n[currentLang].wsNone) msg += `📞 رقم إضافي: ${extraPhone}\n`;
             msg += `📍 ${i18n[currentLang].wsCity}: ${cityText}\n\n`;
             
-            msg += `📦 *تفاصيل الباقات:*\n`;
+            msg += ` *تفاصيل الباقات:*\n`;
             msg += `▫️ ${i18n[currentLang].wsBPhoto}: ${photoPkg ? photoPkg.toUpperCase() + ` (${photoCost} ${curr})` : i18n[currentLang].photoNone}\n`;
             msg += `▫️ ${i18n[currentLang].wsBPromo}: ${promoPkg ? promoPkg.toUpperCase() + ` (${promoCost} ${curr})` : i18n[currentLang].promoNone}\n\n`;
             
-            msg += `🏛️ *تفاصيل الحفل:*\n`;
+            msg += ` *تفاصيل الحفل:*\n`;
             msg += `▫️ ${i18n[currentLang].wsHall}: ${hall}\n`;
             msg += `▫️ ${i18n[currentLang].wsSession}: ${session}\n`;
             msg += `▫️ ${i18n[currentLang].wsMakeup}: ${makeup}\n`;
             msg += `▫️ مصمم الشعر: ${hair}\n`;
             msg += `▫️ ملاحظات: ${notes}\n\n`;
 
-            msg += `💰 *الحساب المالي:*\n`;
-            msg += `💵 ${i18n[currentLang].wsTotal}: ${photoCost + promoCost} ${curr}\n`;
-            msg += `🚗 ${i18n[currentLang].wsTrans}: ${transCost} ${curr}\n`;
+            msg += ` *الحساب المالي:*\n`;
+            msg += ` ${i18n[currentLang].wsTotal}: ${photoCost + promoCost} ${curr}\n`;
+            msg += ` ${i18n[currentLang].wsTrans}: ${transCost} ${curr}\n`;
             if(parseFloat(discountAmount) > 0) msg += `🔻 ${i18n[currentLang].wsDiscount}: -${discountAmount} ${curr}\n`;
-            msg += `💳 ${i18n[currentLang].wsDown}: ${downPayment} ${curr}\n`;
-            msg += `📋 ${i18n[currentLang].wsRemain}: *${remain} ${curr}*\n\n`;
+            msg += ` ${i18n[currentLang].wsDown}: ${downPayment} ${curr}\n`;
+            msg += ` ${i18n[currentLang].wsRemain}: *${remain} ${curr}*\n\n`;
             msg += `✅ تم الإقرار بالموافقة على شروط الحجز والتعاقد.`;
 
             const studioNumber = "201061814314"; 
